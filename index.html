@@ -8,6 +8,14 @@
     <link rel="alternate" href="lib/bower_components/bootstrap/dist/css/bootstrap.css">
   </head>
   <body ng-app="gutenTag">
+    <div ng-controller="GutenCtrl as gutenCtrl">
+      <input type="text" id="firstoption" name="" /> <button id="addButton" ng-click="gutenCtrl.AddOption($event)">+</button>
+
+      <div ng-repeat="option in gutenCtrl.Options">
+          <h4 name="option-{{$index}}" value ="{{option}}">{{option}}</h4>
+      </div>
+
+    </div>
 
 
 
