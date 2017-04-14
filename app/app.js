@@ -1,0 +1,1 @@
+var app = angular.module('gutenTag', ['ngAnimate', 'ngAria', 'ngRoute', 'ngMaterial']);
